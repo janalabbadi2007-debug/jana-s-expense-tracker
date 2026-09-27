@@ -1,0 +1,70 @@
+1. index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>💗Jana's Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>💗  Jana's Expense Tracker</h1>
+    <p class="subtitle">Track your spending ✨</p>
+
+    <div class="container">
+
+        <h2>💰 Money Overview</h2>
+
+        <div class="overview">
+            <div class="card">
+                <h3>Budget</h3>
+                <p>$<span id="budget">0.00</span></p>
+            </div>
+
+            <div class="card">
+                <h3>Spent</h3>
+                <p>$<span id="spent">0.00</span></p>
+            </div>
+
+            <div class="card">
+                <h3>Remaining</h3>
+                <p>$<span id="remaining">0.00</span></p>
+            </div>
+        </div>
+
+        <h2>💵 Set Your Budget</h2>
+
+        <input
+            id="budgetInput"
+            type="number"
+            placeholder="Enter your budget"
+        >
+
+        <button onclick="setBudget()">Set Budget</button>
+
+        <h2>🛍️ Add Expense</h2>
+
+        <input
+            id="expenseName"
+            type="text"
+            placeholder="What did you buy?"
+        >
+
+        <input
+            id="expenseAmount"
+            type="number"
+            placeholder="How much?"
+        >
+
+        <button onclick="addExpense()">Add Expense</button>
+
+        <h2>🧾 Your Expenses</h2>
+
+        <ul id="expenseList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
